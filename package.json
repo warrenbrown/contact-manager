@@ -1,0 +1,19 @@
+{
+  "name": "contact-manager",
+  "version": "1.0.0",
+  "description": "Mean stack contact manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warrenbrown/contact-manager.git"
+  },
+  "author": "Warren Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warrenbrown/contact-manager/issues"
+  },
+  "homepage": "https://github.com/warrenbrown/contact-manager#readme"
+}
