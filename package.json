@@ -4,7 +4,12 @@
   "description": "Mean stack contact manager",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm app.js",
+    "unit": "node_modules/.bin/mocha tests/unit/ --ui bdd --recursive --reporter spec --timeout 10000 --slow 900",
+    "integration": "node_modules/.bin/mocha tests/integration/ --ui bdd --recursive --reporter spec --timeout 10000 --slow 900",
+    "less": "node_modules/.bin/autoless public/assets/less public/assets/css --no-watch",
+    "less-watch": "node_modules/.bin/autoless public/assets/less public/assets/css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,25 @@
   "bugs": {
     "url": "https://github.com/warrenbrown/contact-manager/issues"
   },
-  "homepage": "https://github.com/warrenbrown/contact-manager#readme"
+  "homepage": "https://github.com/warrenbrown/contact-manager#readme",
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.10",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.1.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "serve-static": "^1.13.2"
+  },
+  "devDependecies": {
+    "autoless": "^0.1.7",
+    "chai": "^2.3.0",
+    "chai-things": "^0.2.0",
+    "mocha": "^2.4.5",
+    "request": "^2.71.0"
+  }
 }
